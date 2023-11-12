@@ -1,6 +1,7 @@
 import React from 'react';
 import ghLogo from '../assets/icons/github.svg';
 import liLogo from '../assets/icons/linkedin.png';
+import { Link } from 'react-router-dom';
 
 interface NavPage {
     name: string;
@@ -9,8 +10,8 @@ interface NavPage {
 
 const Header: React.FC = () => {
     const NavPages: NavPage[] = [
-        { name: 'Home', link: '/#' },
-        { name: 'Blog', link: '/#' },
+        { name: 'Home', link: '/' },
+        { name: 'Blog', link: '/blog' },
     ];
 
     return (
@@ -21,9 +22,9 @@ const Header: React.FC = () => {
                     <div className="flex justify-center space-x-4 text-xl">
                         {
                             NavPages.map(page => (
-                                <a
+                                <Link
                                     key={page.name}
-                                    href={page.link}
+                                    to={page.link}
                                     className="
                                         text-white
                                         hover:text-blue-500
@@ -34,7 +35,7 @@ const Header: React.FC = () => {
                                     "
                                 >
                                     {page.name}
-                                </a>
+                                </Link>
                             ))
                         }
                     </div>

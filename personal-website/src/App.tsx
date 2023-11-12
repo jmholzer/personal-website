@@ -1,18 +1,25 @@
 import React from 'react';
-import './App.css'; // make sure to import your Tailwind CSS here
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 
-// Import other components
 import Header from './components/Header';
 import MainContent from './components/MainContent';
+import Blog from './components/Blog';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="App bg-gray-700 flex flex-col min-h-screen">
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App bg-gray-700 flex flex-col min-h-screen">
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="*" element={<div>Page Not Found</div>} /> {/* Fallback Route */}
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
