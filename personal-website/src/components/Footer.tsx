@@ -1,12 +1,17 @@
 import React from 'react';
+import ghLogo from '../assets/icons/github.svg';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-gray-100 border-t mt-8 py-4">
-            <div className="container mx-auto px-6 flex justify-center items-center">
-                <p className="text-gray-600 text-sm text-center">
-                    This is the footer
+        <footer className="mt-auto bg-slate-800">
+            <div className="flex justify-center space-x-4 items-center">
+                <p className="text-white text-xl text-sm text-center">
+                    This site is available under the MIT license
                 </p>
+                <a href="https://github.com/jmholzer">
+                    <img src={ghLogo} alt="GitHub" className="h-6" />
+                </a>
+                <div className="mb-24" />
             </div>
         </footer>
     );

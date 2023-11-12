@@ -39,10 +39,10 @@ const Header: React.FC = () => {
                         }
                     </div>
                     <div className="flex justify-end space-x-4">
-                        <a href="https://github.com/jmholzer" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/jmholzer">
                             <img src={ghLogo} alt="GitHub" className="h-6" />
                         </a>
-                        <a href="https://linkedin.com/in/jannic-holzer/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkedin.com/in/jannic-holzer/">
                             <img src={liLogo} alt="LinkedIn" className="h-6" />
                         </a>
                     </div>
