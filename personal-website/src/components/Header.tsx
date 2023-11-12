@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     ];
 
     return (
-        <header className="bg-slate-800 text-white shadow-md">
+        <header className="bg-slate-800 text-white shadow-md mb-4">
             <nav className="container mx-auto px-6 py-4">
                 <div className="grid grid-cols-3 items-center w-full">
                     <div className="flex justify-start font-bold text-xl">Jannic Holzer</div>

@@ -12,11 +12,13 @@ const App: React.FC = () => {
     <Router>
       <div className="App bg-gray-700 flex flex-col min-h-screen">
         <Header />
-        <Routes>
-          <Route path="/" element={<MainContent />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="*" element={<div>Page Not Found</div>} /> {/* Fallback Route */}
-        </Routes>
+        <div className="flex flex-col flex-grow">
+          <Routes>
+            <Route path="/" element={<MainContent />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="*" element={<div>Page Not Found</div>} /> {/* Fallback Route */}
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>
