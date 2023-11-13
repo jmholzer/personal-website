@@ -22,14 +22,13 @@ const Introduction: React.FC = () => {
     return (
         <div className="w-6/12 mt-4 items-center">
             <p className="text-white text-left mb-4">
-                Hey, I'm Jannic. For the past four years, I've been using technology to solve problems.
-                I care a lot about making life easier using software. I use this site to share intuitive
-                explanations of the things I've learned.
+                Hey, I'm Jannic. For the past four years, I've been using technology to solve problems as an engineer.
+                I care a lot about making life better using software. I use this site to share intuitive
+                explanations of the things I've learned along the way.
             </p>
             <p className="text-white text-left mb-4">
-                I'm mainly interested in tooling for data engineering and machine learning. I was a maintainer
-                on Kedro for a year, where I mainly worked on improving the developer experience on Databricks.
-                Apart from that, I love working on on my own projects:
+                At work, I mainly build tools for better data engineering and machine learning, though
+                I love working on on my own projects too:
             </p>
             <ul className="list-disc text-white text-left mb-4 list-inside">
                 {
