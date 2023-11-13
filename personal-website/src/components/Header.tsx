@@ -1,6 +1,6 @@
 import React from 'react';
 import ghLogo from '../assets/icons/github.svg';
-import liLogo from '../assets/icons/linkedin.png';
+import liLogo from '../assets/icons/linkedin.svg';
 import { Link } from 'react-router-dom';
 
 interface NavPage {
